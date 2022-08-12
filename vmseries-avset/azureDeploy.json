@@ -86,7 +86,8 @@
             "defaultValue": "latest",
             "allowedValues": [
                 "7.1.1",
-		"8.0.0"		    
+		"8.0.0"
+	        "10.1.0"
             ],
             "metadata": {
                 "description": "PAN-OS version."
@@ -221,7 +222,7 @@
     "variables": {
         "apiVersion": "2015-06-15",
         "imagePublisher": "paloaltonetworks",
-	"imageOffer" : "vmseries1",
+	"imageOffer" : "vmseries-flex",
         "fwpublicIPName": "[concat(parameters('vmName'), '-fwMgmtPublicIP')]",
         "nicName": "[concat(parameters('vmName'), '-eth')]",
         "FWPrivateIPAddressUntrust": "[parameters('subnet1StartAddress')]",
