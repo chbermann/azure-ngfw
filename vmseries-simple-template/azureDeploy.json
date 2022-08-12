@@ -84,11 +84,10 @@
         },
         "vmSize": {
             "type": "string",
-            "allowedValues": 
+            "allowedValues": [
                 "Standard_D3_v2",
-            "metadata": {
-                "description": "Azure VM size for VM-Series"
-            }
+                "Standard_D4_v2"
+            ],
         },
         "srcIPInboundNSG": {
             "type": "string",
@@ -185,7 +184,7 @@
         "apiVersion": "2015-06-15",
         "imagePublisher": "paloaltonetworks",
     	"imageSku" : "byol",
-	    "imageOffer" : "vmseries1",
+	    "imageOffer" : "vmseries-flex",
         "fwpublicIPName": "[concat(parameters('vmName'), '-fwMgmtPublicIP')]",
         "nicName": "[concat(parameters('vmName'), '-eth')]",
         "FWPrivateIPAddressUntrust": "[parameters('subnet1StartAddress')]",
